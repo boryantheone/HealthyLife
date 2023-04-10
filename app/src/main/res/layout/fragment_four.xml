@@ -6,10 +6,24 @@
     tools:context=".FragmentFour"
     style="@style/my_style">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/q_4_text"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_marginTop="250dp"
+        android:fontFamily="@font/roboto_mono"
+        android:text="@string/q_4"
+        android:textAlignment="center"
+        android:textSize="34sp" />
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:ems="10"
+        android:text="@string/q_4_edit_text"
+        android:textAlignment="center"
+        android:layout_marginStart="100dp"/>
 
 </FrameLayout>

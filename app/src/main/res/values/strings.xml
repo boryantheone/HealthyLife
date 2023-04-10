@@ -9,4 +9,11 @@
     <string name="rus_sex_m">Мужской</string>
     <string name="rus_sex_f">Женский</string>
     <string name="q_2">Ваш возраст?</string>
+    <string name="q_3">Ваш рост?</string>
+    <string name="q_3_edit_text">Рост</string>
+    <string name="q_2_edit_text">Возраст</string>
+    <string name="q_4">Ваш вес?</string>
+    <string name="q_4_edit_text">Вес</string>
+    <string name="q_5">Количество калорий, которое хотите потреблять за день</string>
+    <string name="q_5_edit_text">Количество калорий</string>
 </resources>
