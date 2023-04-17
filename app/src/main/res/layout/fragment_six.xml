@@ -4,32 +4,58 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".FragmentSix"
+    android:layout_gravity="center_horizontal"
     style="@style/my_style">
 
-    <!-- TODO: Update blank fragment layout -->
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:text="@string/q_6_edit_text"
+        android:layout_marginTop="250dp"
+        android:textAlignment="center"/>
 
     <RadioGroup
         android:id="@+id/radioGroup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp">
+        android:layout_marginTop="300dp">
 
         <RadioButton
-            android:id="@+id/radioButtonHusband"
+            android:id="@+id/radioButtonOne"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
-            android:text="1.2 - минимальная активность, большую часть дня вы сидите, легкая работа по дому" />
+            android:minHeight="48dp"
+            android:text="@string/r_b_1" />
 
         <RadioButton
-            android:id="@+id/radioButtonKitten"
+            android:id="@+id/radioButtonTwo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Котёнок" />
+            android:minHeight="48dp"
+            android:text="@string/r_b_2" />
+
+        <RadioButton
+            android:id="@+id/radioButtonThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/r_b_3" />
+
+        <RadioButton
+            android:id="@+id/radioButtonFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/r_b_4" />
+
+        <RadioButton
+            android:id="@+id/radioButtonFive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/r_b_5" />
     </RadioGroup>
 
 </FrameLayout>
