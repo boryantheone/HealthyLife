@@ -20,4 +20,6 @@
     <string name="r_b_3">1.55 - для тех, кто занимается спортом 3-5 раз в неделю</string>
     <string name="r_b_4">1.725 - для тех, кто занимается спортом 6-7 раз в неделю</string>
     <string name="r_b_5">1.9 - для тех, кто занимается спортом каждый день</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
