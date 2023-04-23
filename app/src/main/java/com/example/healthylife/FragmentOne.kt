@@ -7,9 +7,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
+import android.widget.Button
 import android.widget.ListView
+import android.widget.Toast
+import androidx.fragment.app.activityViewModels
+import androidx.navigation.fragment.findNavController
 
 class FragmentOne : Fragment() {
+    private val dataModel: DataModel by activityViewModels()
+    private var result: String = ""
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -17,22 +23,30 @@ class FragmentOne : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_one, container, false)
         val sex = arrayOf("Мужской", "Женский")
-        var result: Int
+
 
         val arrayAdapter: ArrayAdapter<String>? =
             context?.let { ArrayAdapter(it, android.R.layout.simple_list_item_1, sex) }
-        var sexListView: ListView = view.findViewById(R.id.sex_list)
+        val sexListView: ListView = view.findViewById(R.id.sex_list)
         sexListView.adapter = arrayAdapter
         // Inflate the layout for this fragment
 
-        sexListView.setOnItemClickListener {
-            _, _, position, _ ->
-            var selectedItem = sex[position]
-            result = if (selectedItem == "Мужской") 1 else 0
-            Log.d("fragmentOne", "result$result")
+        sexListView.setOnItemClickListener { _, _, position, _ ->
+            val selectedItem = sex[position]
+            result = if (selectedItem == "Мужской") "1" else "0"
+            dataModel.answerOne.value = result
+            Log.d("fragments", "result1=$result")
         }
 
+        val button = view.findViewById<Button>(R.id.buttonNext1)
+        button?.setOnClickListener {
+            if (result.isNotBlank()) {
+                findNavController().navigate(R.id.action_fragmentOne_to_fragmentTwo)
+            } else {
+                val toast = Toast.makeText(activity, "Выберите вариант!", Toast.LENGTH_SHORT)
+                toast.show()
+            }
+        }
         return view
     }
-
 }

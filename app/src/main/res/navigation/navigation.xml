@@ -18,5 +18,63 @@
         android:id="@+id/fragmentOne"
         android:name="com.example.healthylife.FragmentOne"
         android:label="fragment_one"
-        tools:layout="@layout/fragment_one" />
+        tools:layout="@layout/fragment_one" >
+        <action
+            android:id="@+id/action_fragmentOne_to_fragmentTwo"
+            app:destination="@id/fragmentTwo" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentTwo"
+        android:name="com.example.healthylife.FragmentTwo"
+        android:label="fragment_two"
+        tools:layout="@layout/fragment_two" >
+        <action
+            android:id="@+id/action_fragmentTwo_to_fragmentThree"
+            app:destination="@id/fragmentThree" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentThree"
+        android:name="com.example.healthylife.FragmentThree"
+        android:label="fragment_three"
+        tools:layout="@layout/fragment_three" >
+        <action
+            android:id="@+id/action_fragmentThree_to_fragmentFour"
+            app:destination="@id/fragmentFour" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentFour"
+        android:name="com.example.healthylife.FragmentFour"
+        android:label="fragment_four"
+        tools:layout="@layout/fragment_four" >
+        <action
+            android:id="@+id/action_fragmentFour_to_fragmentFive"
+            app:destination="@id/fragmentFive" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentFive"
+        android:name="com.example.healthylife.FragmentFive"
+        android:label="fragment_five"
+        tools:layout="@layout/fragment_five" >
+        <action
+            android:id="@+id/action_fragmentFive_to_fragmentSix"
+            app:destination="@id/fragmentSix" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSix"
+        android:name="com.example.healthylife.FragmentSix"
+        android:label="fragment_six"
+        tools:layout="@layout/fragment_six" >
+        <action
+            android:id="@+id/action_fragmentSix_to_fragmentSeven"
+            app:destination="@id/fragmentSeven" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSeven"
+        android:name="com.example.healthylife.FragmentSeven"
+        android:label="fragment_seven"
+        tools:layout="@layout/fragment_seven" >
+        <action
+            android:id="@+id/action_fragmentSeven_to_startFragment"
+            app:destination="@id/startFragment" />
+    </fragment>
 </navigation>

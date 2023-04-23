@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/q_1"
     style="@style/my_style"
@@ -8,22 +9,46 @@
     android:layout_gravity="center_horizontal"
     tools:context=".FragmentOne">
 
-    <TextView
-        android:id="@+id/q_1_text"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintOne"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="250dp"
-        android:fontFamily="@font/roboto_mono"
-        android:text="@string/q_1"
-        android:textAlignment="center"
-        android:textSize="34sp" />
+        android:layout_height="match_parent">
 
+        <TextView
+            android:id="@+id/q_1_text"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="190dp"
+            android:layout_marginEnd="47dp"
+            android:fontFamily="@font/roboto_mono"
+            android:text="@string/q_1"
+            android:textAlignment="center"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <ListView
-        android:id="@+id/sex_list"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="350dp" />
+        <ListView
+            android:id="@+id/sex_list"
+            android:layout_width="250dp"
+            android:layout_height="132dp"
+            android:drawSelectorOnTop="true"
+            android:listSelector="@color/color_for_select"
+            app:layout_constraintBottom_toTopOf="@+id/buttonNext1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/q_1_text" />
 
+        <Button
+            android:id="@+id/buttonNext1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="176dp"
+            android:text="@string/next_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

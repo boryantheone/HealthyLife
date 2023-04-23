@@ -8,18 +8,19 @@
     <string name="rus_sex_f">Женский</string>
     <string name="q_2">Ваш возраст?</string>
     <string name="q_3">Ваш рост?</string>
-    <string name="q_3_edit_text">Рост</string>
-    <string name="q_2_edit_text">Возраст</string>
+    <string name="q_3_edit_text">Введите рост</string>
+    <string name="q_2_edit_text">Введите возраст</string>
     <string name="q_4">Ваш вес?</string>
-    <string name="q_4_edit_text">Вес</string>
+    <string name="q_4_edit_text">Введите вес</string>
     <string name="q_5">Количество калорий, которое хотите потреблять за день</string>
-    <string name="q_5_edit_text">Количество калорий</string>
+    <string name="q_5_edit_text">Введите количество</string>
     <string name="q_6_edit_text">Выберите коэффициент вашей активности</string>
     <string name="r_b_1">1.2 - минимальная активность, большую часть дня вы сидите, легкая работа по дому</string>
-    <string name="r_b_2">1.375 - для тех, кто занимается спортом 1-3 раза в неделю</string>
-    <string name="r_b_3">1.55 - для тех, кто занимается спортом 3-5 раз в неделю</string>
-    <string name="r_b_4">1.725 - для тех, кто занимается спортом 6-7 раз в неделю</string>
+    <string name="r_b_2">1.375 – для тех, кто занимается спортом 1–3 раза в неделю</string>
+    <string name="r_b_3">1.55 – для тех, кто занимается спортом 3–5 раз в неделю</string>
+    <string name="r_b_4">1.725 – для тех, кто занимается спортом 6–7 раз в неделю</string>
     <string name="r_b_5">1.9 - для тех, кто занимается спортом каждый день</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="next_text">Далее</string>
 </resources>
