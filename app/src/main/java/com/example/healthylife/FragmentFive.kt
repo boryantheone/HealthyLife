@@ -39,7 +39,7 @@ class FragmentFive : Fragment() {
                 editTextCalorie.text.clear()
             }
             result = editTextCalorie.text.toString()
-            dataModel.answerFour.value = result
+            dataModel.answerFive.value = result
             Log.d("fragments", "result5=$result")
             if (actionId == EditorInfo.IME_ACTION_DONE) {
                 (activity as MainActivity).hideKeyboard(editTextCalorie)
