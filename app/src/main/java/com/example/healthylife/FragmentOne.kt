@@ -33,7 +33,7 @@ class FragmentOne : Fragment() {
 
         sexListView.setOnItemClickListener { _, _, position, _ ->
             val selectedItem = sex[position]
-            result = if (selectedItem == "Мужской") "1" else "0"
+            result = if (selectedItem == "Мужской") "0" else "1"
             dataModel.answerOne.value = result
             Log.d("fragments", "result1=$result")
         }

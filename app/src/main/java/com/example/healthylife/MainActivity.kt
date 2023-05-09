@@ -1,14 +1,15 @@
 package com.example.healthylife
 
 import android.content.Context
+import android.net.ConnectivityManager
 import android.os.Bundle
-import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
+
 
 class MainActivity : AppCompatActivity() {
     private lateinit var navController: NavController
@@ -36,5 +37,11 @@ class MainActivity : AppCompatActivity() {
         val imm = this.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
         imm.showSoftInput(editText.rootView, InputMethodManager.SHOW_IMPLICIT)
         editText.requestFocus()
+    }
+
+    fun isOnline(context: Context): Boolean {
+        val cm = context.getSystemService(CONNECTIVITY_SERVICE) as ConnectivityManager
+        val netInfo = cm.activeNetworkInfo
+        return netInfo != null && netInfo.isConnectedOrConnecting
     }
 }

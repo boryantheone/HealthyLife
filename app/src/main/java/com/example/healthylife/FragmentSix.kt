@@ -42,11 +42,10 @@ class FragmentSix : Fragment() {
         val radioId = radioGroup.checkedRadioButtonId
 
         result = when (radioId) {
-            R.id.radioButtonOne -> "1.3"
+            R.id.radioButtonOne -> "1.2"
             R.id.radioButtonTwo -> "1.4"
             R.id.radioButtonThree -> "1.6"
             R.id.radioButtonFour -> "1.7"
-            R.id.radioButtonFive -> "1.9"
             else -> ""
         }
         if (result.isNotEmpty()) {
