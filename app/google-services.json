@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "799501579735",
+    "project_id": "healthapp-2709",
+    "storage_bucket": "healthapp-2709.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:799501579735:android:1068f2c32b71cc627b8792",
+        "android_client_info": {
+          "package_name": "com.example.healthylife"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "799501579735-hfl8eufc3m2dmeenarqvhii29leacka0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.healthylife",
+            "certificate_hash": "88332b5a1439206f6f4b670bfdd3be1ee7ada710"
+          }
+        },
+        {
+          "client_id": "799501579735-bmoh540q26a33qq5kcum591vvl6ia9t1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-utbIUyzFDjNR990eqnM3W4mrdbVW2wI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "799501579735-bmoh540q26a33qq5kcum591vvl6ia9t1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

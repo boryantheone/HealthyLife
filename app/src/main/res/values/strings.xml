@@ -24,4 +24,11 @@
     <string name="tryAgain">Попробовать снова</string>
     <string name="resultText">Ваш результат</string>
     <string name="shareText">Поделиться результатом</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="loginBtnText">Войти</string>
+    <string name="regBtnText">Зарегистрироваться</string>
+    <string name="logTextScreen">Вход в аккаунт</string>
+    <string name="regTextScreen">Регистрация</string>
+    <string name="regTextBtn">Зарегистрироваться</string>
 </resources>
